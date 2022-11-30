@@ -1,0 +1,34 @@
+.footer {
+  padding: rem(40px) 0;
+  font-family: "Manrope", sans-serif;
+
+  > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__caption {
+    margin-bottom: em(15px, 20px);
+    max-width: rem(290px);
+    font-weight: 600;
+    font-size: rem(20px);
+    line-height: 160%;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: rem(90px);
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    max-width: rem(200px);
+    font-size: rem(16px);
+    line-height: 160%;
+    letter-spacing: em(-0.3px, 16px);
+    gap: rem(15px);
+  }
+}
