@@ -1,0 +1,18 @@
+:root {
+  // colors
+
+  --white: #fff;
+  --black: #1e423d;
+  --green: #274b47;
+  --light-blue: #51e5ff;
+  --dark-blue: #3563e9;
+
+  // values
+
+  --content-width: #{em(1200px)};
+  --container-offset: #{em(15px)};
+
+  // fonts
+
+  --font-family: "Inter", sans-serif;
+}

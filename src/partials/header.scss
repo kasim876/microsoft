@@ -1,0 +1,31 @@
+@import "@shared/nav/nav";
+
+.header {
+  padding: rem(22px) 0;
+  background-color: var(--white);
+
+  > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__btn {
+    border: 1px solid var(--green);
+    border-radius: rem(5px);
+    width: rem(160px);
+    height: rem(44px);
+    font-weight: 500;
+    font-size: rem(16px);
+    line-height: 120%;
+    letter-spacing: em(0.5px, 16px);
+    color: var(--white);
+    background-color: var(--green);
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+    @include hover {
+      color: var(--green);
+      background-color: transparent;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.nav {
+  &__list {
+    display: flex;
+    gap: rem(30px);
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: rem(14px);
+    line-height: 140%;
+    letter-spacing: em(0.2px, 14px);
+    transition: color 0.3s ease-in-out;
+
+    &--current {
+      font-weight: 700;
+      pointer-events: none;
+    }
+  }
+}
