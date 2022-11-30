@@ -6,7 +6,7 @@ export const path = {
     markup: `${buildFolder}/`,
     styles: `${buildFolder}/styles`,
     scripts: `${buildFolder}/scripts`,
-    images: `${buildFolder}/assets`,
+    images: `${buildFolder}/assets/images`,
     sprite: `${buildFolder}/assets`
   },
   src: {
