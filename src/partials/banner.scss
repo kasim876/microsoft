@@ -8,11 +8,12 @@
     border-radius: rem(15px);
     padding: rem(60px) rem(95px);
     text-align: center;
-    background-color: var(--light-green);
+    background-color: rgba(48 230 208 / 11%);
   }
 
   &__title {
     margin-bottom: 0.5em;
+    font-family: "Manrope", sans-serif;
     font-weight: 600;
     font-size: 3rem;
     line-height: 120%;
@@ -21,6 +22,7 @@
 
   &__descr {
     margin-bottom: em(48px, 20px);
+    font-family: "Manrope", sans-serif;
     font-size: 1.25rem;
     line-height: 120%;
     letter-spacing: (0.2px, 20px);
