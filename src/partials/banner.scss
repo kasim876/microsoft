@@ -1,0 +1,47 @@
+.banner {
+  padding: rem(80px) 0;
+
+  > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: rem(15px);
+    padding: rem(60px) rem(95px);
+    text-align: center;
+    background-color: var(--light-green);
+  }
+
+  &__title {
+    margin-bottom: 0.5em;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 120%;
+    letter-spacing: em(0.2px, 48px);
+  }
+
+  &__descr {
+    margin-bottom: em(48px, 20px);
+    font-size: 1.25rem;
+    line-height: 120%;
+    letter-spacing: (0.2px, 20px);
+    color: var(--gray);
+  }
+
+  &__btn {
+    border: 1px solid var(--green);
+    width: rem(220px);
+    height: rem(52px);
+    font-weight: 500;
+    font-size: rem(18px);
+    line-height: 120%;
+    letter-spacing: em(0.5px, 18px);
+    color: var(--white);
+    background-color: var(--green);
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+    @include hover {
+      color: var(--green);
+      background-color: transparent;
+    }
+  }
+}
