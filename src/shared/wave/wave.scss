@@ -1,0 +1,11 @@
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  svg {
+    display: block;
+    width: inherit;
+    height: rem(250px);
+  }
+}
