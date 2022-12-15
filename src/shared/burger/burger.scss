@@ -1,0 +1,16 @@
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid var(--green);
+  border-radius: rem(4px);
+  padding: 10px 5px;
+  width: rem(44px);
+  height: rem(44px);
+
+  &__line {
+    width: 100%;
+    height: rem(2px);
+    background-color: var(--green);
+  }
+}
