@@ -10,7 +10,6 @@
     line-height: 140%;
     letter-spacing: em(0.2px, 14px);
     color: #1e423d;
-    transition: color 0.3s ease-in-out;
 
     &--current {
       font-weight: 700;
@@ -18,7 +17,7 @@
     }
 
     @include hover {
-      color: var(--light-blue);
+      color: var(--dark-blue);
     }
   }
 }
