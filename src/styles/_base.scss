@@ -95,3 +95,17 @@ address {
   background-color: transparent;
   cursor: pointer;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: rem(30px) rem(20px);
+
+  @include tablet {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  @include mobile {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

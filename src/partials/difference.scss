@@ -35,18 +35,22 @@
       display: block;
       margin-bottom: rem(30px);
     }
+
+    @include laptop {
+      grid-column: 4 span;
+    }
   }
 
   &__subtitle {
     margin-bottom: em(15px, 22px);
     font-weight: 600;
-    font-size: rem(22px);
+    font-size: 1.3rem;
     line-height: 120%;
     letter-spacing: em(0.2px, 22px);
   }
 
   &__descr {
-    font-size: rem(16px);
+    font-size: 0.875rem;
     line-height: 150%;
     letter-spacing: em(0.2px, 16px);
   }
