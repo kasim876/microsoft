@@ -22,7 +22,7 @@
     gap: rem(90px);
   }
 
-  &__item {
+  &__list-item {
     display: flex;
     align-items: center;
     max-width: rem(200px);
@@ -30,5 +30,11 @@
     line-height: 160%;
     letter-spacing: em(-0.3px, 16px);
     gap: rem(15px);
+
+    > a {
+      @include hover {
+        color: var(--dark-blue);
+      }
+    }
   }
 }
