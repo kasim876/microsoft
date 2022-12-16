@@ -9,6 +9,10 @@
     padding: rem(60px) rem(95px);
     text-align: center;
     background-color: rgba(48 230 208 / 11%);
+
+    @include tablet {
+      padding: rem(60px) rem(15px);
+    }
   }
 
   &__title {
@@ -18,6 +22,10 @@
     font-size: 3rem;
     line-height: 120%;
     letter-spacing: em(0.2px, 48px);
+
+    @include laptop {
+      font-size: 2.5rem;
+    }
   }
 
   &__descr {
