@@ -7,5 +7,13 @@
     display: block;
     width: inherit;
     height: rem(250px);
+
+    @include laptop {
+      height: rem(150px);
+    }
+
+    @include mobile {
+      height: rem(100px);
+    }
   }
 }
