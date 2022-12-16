@@ -42,3 +42,32 @@
     }
   }
 }
+
+.burger-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 500;
+  padding: rem(30px) rem(15px);
+  width: 80%;
+  height: 100%;
+  background-color: #fff;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+
+  .nav__list {
+    flex-direction: column;
+  }
+
+  &__btn {
+    position: absolute;
+    right: 15px;
+    top: 30px;
+    width: 24px;
+    height: 24px;
+  }
+
+  &--visible {
+    transform: none;
+  }
+}

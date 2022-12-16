@@ -1,5 +1,11 @@
 <header class="header">
   <div class="container">
+    <div class="burger-menu">
+      @include('../shared/nav/nav.html')
+      <button class="btn-reset burger-menu__btn">
+        <img src="assets/images/svg/cross.svg" alt="">
+      </button>
+    </div>
     @include('../shared/burger/burger.html')
     @include('../shared/nav/nav.html')
     <button class="btn-reset header__btn">Lorem ipsum</button>
