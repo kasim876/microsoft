@@ -8,6 +8,10 @@
     font-size: rem(48px);
     line-height: 120%;
     letter-spacing: em(0.2px, 48px);
+
+    @include laptop {
+      font-size: 2.5rem;
+    }
   }
 
   &__caption {
@@ -15,6 +19,10 @@
     font-family: "Manrope", sans-serif;
     font-size: rem(20px);
     line-height: 120%;
+
+    @include laptop {
+      font-size: rem(18px);
+    }
   }
 
   &__list {
