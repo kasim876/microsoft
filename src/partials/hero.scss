@@ -6,7 +6,7 @@
   padding-bottom: 285px;
   font-family: "Manrope", sans-serif;
   color: var(--white);
-  background-image: url("../assets/images/hero-bg.png");
+  background-image: url("../assets/images/hero-bg.avif");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: var(--green);
@@ -49,12 +49,4 @@
     padding-top: 100px;
     padding-bottom: 250px;
   }
-}
-
-.webp .hero {
-  background-image: url("../assets/images/hero-bg.webp");
-}
-
-.avif .hero {
-  background-image: url("../assets/images/hero-bg.avif");
 }
