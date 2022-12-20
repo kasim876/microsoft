@@ -1,7 +1,7 @@
 .provider {
-  padding: 50px 0 80px;
+  padding: 80px 0;
   background-image: url("../assets/images/provider-bg.png");
-  background-size: contain;
+  background-size: auto 100%;
   background-repeat: no-repeat;
   background-color: #274b47;
 
@@ -48,4 +48,12 @@
   @include laptop {
     background-image: none;
   }
+}
+
+.webp .provider {
+  background-image: url("../assets/images/provider-bg.webp");
+}
+
+.avif .provider {
+  background-image: url("../assets/images/provider-bg.avif");
 }
