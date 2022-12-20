@@ -8,6 +8,164 @@
   <link rel="apple-touch-icon" href="assets/images/favicon.png">
   <title>Microsoft</title>
   <meta name="description" content="Официальный дистрибьютор Microsoft в Казахстане">
+  <style>
+    .header {
+      padding: 1.5rem 0;
+      background-color: var(--white);
+    }
+    .header__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    @media (max-width: 48em) {
+      .header__nav {
+        display: none;
+      }
+    }
+    .header__btn {
+      width: 10rem;
+      height: 3rem;
+    }
+
+    .burger-menu {
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 500;
+      padding: 30px 15px;
+      width: 80%;
+      height: 100%;
+      background-color: var(--white);
+      transform: translateX(-100%);
+      transition: transform 0.3s ease-in-out;
+    }
+    .burger-menu__btn {
+      position: absolute;
+      right: 15px;
+      top: 30px;
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+    .burger-menu__nav .nav__list {
+      flex-direction: column;
+    }
+    .burger-menu--visible {
+      transform: none;
+    }
+    .nav__list {
+      display: flex;
+      gap: 2rem;
+    }
+    .nav__link {
+      font-size: 1rem;
+      letter-spacing: 0.05em;
+      color: var(--black);
+    }
+    .nav__link--current {
+      font-weight: 700;
+      pointer-events: none;
+    }
+    @media (any-hover: hover) {
+      .nav__link:hover {
+        color: var(--dark-blue);
+      }
+    }
+
+    .burger {
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 2px solid var(--green);
+      border-radius: 5px;
+      padding: 10px 5px;
+      width: 3rem;
+      height: 3rem;
+    }
+    .burger__line {
+      width: 100%;
+      height: 2px;
+      background-color: var(--green);
+    }
+    @media (max-width: 48em) {
+      .burger {
+        display: flex;
+      }
+    }
+
+    .wave {
+      position: absolute;
+      bottom: -2px;
+      width: 100%;
+    }
+    .wave svg {
+      display: block;
+      width: inherit;
+      height: 15.625rem;
+    }
+    @media (max-width: 64em) {
+      .wave svg {
+        height: 9.375rem;
+      }
+    }
+    @media (max-width: 36em) {
+      .wave svg {
+        height: 6.25rem;
+      }
+    }
+
+    .hero {
+      position: relative;
+      padding-top: 180px;
+      padding-bottom: 285px;
+      font-family: "Manrope", sans-serif;
+      color: var(--white);
+      background-image: url("../assets/images/hero-bg.avif");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color: var(--green);
+    }
+    .hero__descr {
+      margin-bottom: 0.2em;
+      font-weight: 700;
+      font-size: 4rem;
+      line-height: 120%;
+    }
+    @media (max-width: 48em) {
+      .hero__descr {
+        font-size: 3rem;
+      }
+    }
+    @media (max-width: 36em) {
+      .hero__descr {
+        font-size: 2rem;
+      }
+    }
+    .hero__title {
+      margin-bottom: 3.5em;
+      max-width: 500px;
+      font-weight: 400;
+      font-size: 1.5rem;
+      line-height: 140%;
+      letter-spacing: 0.05em;
+    }
+    @media (max-width: 48em) {
+      .hero__title {
+        font-size: 1rem;
+      }
+    }
+    .hero__btn {
+      width: 13rem;
+      height: 3rem;
+      letter-spacing: 0.05em;
+    }
+    @media (max-width: 48em) {
+      .hero {
+        padding-top: 100px;
+        padding-bottom: 250px;
+      }
+    }
+  </style>
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/index.css">
   <script src="scripts/imageTest.js" defer></script>
