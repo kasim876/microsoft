@@ -1,13 +1,13 @@
 .difference {
-  padding: rem(50px) 0 rem(80px);
+  padding: 50px 0 80px;
 
   &__title {
-    margin-bottom: em(20px, 48px);
+    margin-bottom: 0.5em;
     font-family: "Manrope", sans-serif;
     font-weight: 600;
-    font-size: rem(48px);
+    font-size: 3rem;
     line-height: 120%;
-    letter-spacing: em(0.2px, 48px);
+    letter-spacing: 0.05em;
 
     @include laptop {
       font-size: 2.5rem;
@@ -15,51 +15,51 @@
   }
 
   &__caption {
-    margin-bottom: em(50px, 20px);
+    margin-bottom: 2.5em;
     font-family: "Manrope", sans-serif;
-    font-size: rem(20px);
+    font-size: 1.25em;
     line-height: 120%;
 
     @include laptop {
-      font-size: rem(18px);
+      font-size: 1rem;
     }
   }
 
   &__list {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: rem(30px);
+    gap: rem30px;
   }
 
   &__item {
     grid-column: 3 span;
-    border-radius: rem(10px);
-    padding: rem(20px);
-    min-height: rem(350px);
+    border-radius: 10px;
+    padding: 20px;
+    min-height: 350px;
     color: var(--white);
     background-color: var(--green);
-
-    img {
-      display: block;
-      margin-bottom: rem(30px);
-    }
 
     @include laptop {
       grid-column: 4 span;
     }
   }
 
+  &__icon {
+    display: block;
+    margin-bottom: 30px;
+  }
+
   &__subtitle {
-    margin-bottom: em(15px, 22px);
+    margin-bottom: 0.7em;
     font-weight: 600;
     font-size: 1.3rem;
     line-height: 120%;
-    letter-spacing: em(0.2px, 22px);
+    letter-spacing: 0.05em;
   }
 
   &__descr {
     font-size: 0.875rem;
     line-height: 150%;
-    letter-spacing: em(0.2px, 16px);
+    letter-spacing: 0.05em;
   }
 }

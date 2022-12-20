@@ -1,4 +1,4 @@
-.page {
+html {
   box-sizing: border-box;
 }
 
@@ -8,7 +8,7 @@
   box-sizing: inherit;
 }
 
-.page__body {
+body {
   margin: 0;
   min-width: 320px;
   min-height: 100%;
@@ -38,6 +38,12 @@ p {
   margin: 0;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -64,12 +70,6 @@ address {
 
 .dis-scroll {
   overflow: hidden;
-}
-
-.list-reset {
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .input-reset {
@@ -121,7 +121,7 @@ address {
 .grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: rem(30px) rem(20px);
+  gap: 30px 20px;
 
   @include tablet {
     grid-template-columns: repeat(8, 1fr);

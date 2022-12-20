@@ -1,13 +1,17 @@
 <header class="header">
-  <div class="container">
+  <div class="container header__container">
     <div class="burger-menu">
-      @include('../shared/nav/nav.html')
-      <button class="btn-reset burger-menu__btn">
-        <img src="assets/images/svg/cross.svg" alt="">
+      @include('../shared/nav/nav.html', {
+        class: ' burger-menu__nav'
+      })
+      <button class="btn-reset burger-menu__btn" aria-label="Закрыть меню">
+        <img src="assets/images/svg/cross.svg" alt="" aria-hidden="true">
       </button>
     </div>
     @include('../shared/burger/burger.html')
-    @include('../shared/nav/nav.html')
-    <button class="btn-reset header__btn">Lorem ipsum</button>
+    @include('../shared/nav/nav.html', {
+      class: ' header__nav'
+    })
+    <button class="btn-reset btn btn--green header__btn" aria-label="Lorem ipsum">Lorem ipsum</button>
   </div>
 </header>

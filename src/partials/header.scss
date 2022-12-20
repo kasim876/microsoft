@@ -1,45 +1,25 @@
-@import "@shared/nav/nav";
-@import "@shared/burger/burger";
+@import "../shared/nav/nav";
+@import "../shared/burger/burger";
 
 .header {
-  padding: rem(20px) 0;
+  padding: 1.5rem 0;
   background-color: var(--white);
 
-  > .container {
+  &__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
 
-    > .nav {
-      @include tablet {
-        display: none;
-      }
-    }
-
-    > .burger {
-      @include tablet {
-        display: flex;
-      }
+  &__nav {
+    @include tablet {
+      display: none;
     }
   }
 
   &__btn {
-    border: 1px solid var(--green);
-    border-radius: rem(5px);
-    width: rem(160px);
-    height: rem(44px);
-    font-weight: 500;
-    font-size: rem(16px);
-    line-height: 120%;
-    letter-spacing: em(0.5px, 16px);
-    color: var(--white);
-    background-color: var(--green);
-    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-
-    @include hover {
-      color: var(--green);
-      background-color: transparent;
-    }
+    width: 10rem;
+    height: 3rem;
   }
 }
 
@@ -48,23 +28,23 @@
   left: 0;
   top: 0;
   z-index: 500;
-  padding: rem(30px) rem(15px);
+  padding: 30px 15px;
   width: 80%;
   height: 100%;
-  background-color: #fff;
+  background-color: var(--white);
   transform: translateX(-100%);
   transition: transform 0.3s ease-in-out;
-
-  .nav__list {
-    flex-direction: column;
-  }
 
   &__btn {
     position: absolute;
     right: 15px;
     top: 30px;
-    width: 24px;
-    height: 24px;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  &__nav .nav__list {
+    flex-direction: column;
   }
 
   &--visible {

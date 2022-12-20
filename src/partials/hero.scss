@@ -2,59 +2,51 @@
 
 .hero {
   position: relative;
-  padding-top: rem(180px);
-  padding-bottom: rem(285px);
+  padding-top: 180px;
+  padding-bottom: 285px;
   font-family: "Manrope", sans-serif;
   color: var(--white);
   background-image: url("../assets/images/hero-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: var(--green);
 
   &__descr {
     margin-bottom: em(12px, 60px);
     font-weight: 700;
-    font-size: rem(60px);
-    line-height: 140%;
+    font-size: 4rem;
+    line-height: 120%;
+
+    @include tablet {
+      font-size: 3rem;
+    }
 
     @include mobile {
-      font-size: rem(40px);
+      font-size: 2rem;
     }
   }
 
   &__title {
-    margin-bottom: em(70px, 20px);
-    max-width: rem(500px);
+    margin-bottom: 3.5em;
+    max-width: 500px;
     font-weight: 400;
-    font-size: rem(20px);
+    font-size: 1.5rem;
     line-height: 140%;
-    letter-spacing: em(0.2px, 20px);
+    letter-spacing: 0.05em;
 
-    @include mobile {
-      font-size: rem(18px);
+    @include tablet {
+      font-size: 1rem;
     }
   }
 
   &__btn {
-    border: 1px solid var(--light-blue);
-    border-radius: rem(16px);
-    width: rem(215px);
-    height: rem(55px);
-    font-weight: 700;
-    font-size: rem(18px);
-    line-height: 150%;
-    letter-spacing: em(0.5px, 18px);
-    color: var(--green);
-    background-color: var(--light-blue);
-    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-
-    @include hover {
-      color: var(--light-blue);
-      background-color: transparent;
-    }
+    width: 13rem;
+    height: 3rem;
+    letter-spacing: 0.05em;
   }
 
   @include tablet {
-    padding-top: rem(100px);
-    padding-bottom: rem(250px);
+    padding-top: 100px;
+    padding-bottom: 250px;
   }
 }
